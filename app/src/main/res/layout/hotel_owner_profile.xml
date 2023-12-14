@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bg_room_update"
+    android:orientation="vertical"
+    tools:context=".activities.HotelOwnerProfile">
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/heading"
+      android:layout_width="match_parent"
+      android:layout_height="115dp"
+
+      android:layout_marginLeft="-5dp"
+      android:layout_marginTop="-35dp"
+      android:layout_marginRight="-5dp"
+
+      app:cardBackgroundColor="@color/mainColorOrange"
+      app:cardCornerRadius="1000dp"
+      app:cardElevation="70dp"
+      app:cardPreventCornerOverlap="true"
+      app:cardUseCompatPadding="false"
+      tools:ignore="VisualLintBounds">
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center|bottom"
+        android:paddingLeft="20dp"
+        android:paddingTop="50dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+
+        android:text="@string/profile"
+        android:textColor="@color/mainColorBlack"
+
+        android:textSize="12pt"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+  </androidx.cardview.widget.CardView>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+
+      android:layout_marginTop="-45dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        tools:ignore="ScrollViewSize">
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="210dp"
+
+          android:layout_marginTop="-11dp"
+          android:src="@drawable/palestine"
+          tools:ignore="ContentDescription" />
+
+      <TextView
+          android:id="@+id/hotelOwner_HotelOwner"
+          style="@style/TextAppearance.AppCompat.Body1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="end"
+          android:layout_marginEnd="10dp"
+          android:background="@drawable/bg_user_info"
+          android:gravity="start"
+          android:padding="10dp"
+          android:text="@string/hotelOwner"
+          android:textSize="8pt"
+          android:textStyle="bold"
+          tools:ignore="HardcodedText,TextSizeCheck" />
+
+      <ImageView
+          android:id="@+id/hotelOwner_profile_ur_photo"
+          android:layout_width="110dp"
+          android:layout_height="110dp"
+
+          android:layout_gravity="start"
+          android:layout_marginTop="-120dp"
+          android:background="@drawable/bg_profile_img"
+
+          android:padding="20dp"
+          android:src="@drawable/ic_add_photo"
+          tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+      <TextView
+          android:id="@+id/hotelOwner_profile_ur_name"
+          style="@style/Widget.Material3.MaterialTimePicker.Display.HelperText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="start"
+          android:gravity="start"
+          android:padding="10dp"
+
+          android:text="𝓑𝓪𝓻𝓪𝓪 𝓐 𝓐𝓫𝓾𝓐𝓵𝓻𝓸𝓫"
+          android:textColor="@color/black"
+          android:textSize="10pt"
+          android:textStyle="bold"
+          tools:ignore="HardcodedText,TextSizeCheck" />
+
+
+      <TableLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+
+          android:layout_gravity="center"
+          android:layout_marginTop="20dp"
+          android:padding="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_user_info"
+            android:padding="10dp">
+
+          <TextView
+              android:id="@+id/textView2"
+              style="@style/TextAppearance.AppCompat.Body2"
+              android:layout_width="90dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="start"
+              android:padding="10dp"
+              android:text="@string/urEmail"
+              android:textSize="7pt"
+              android:textStyle="bold"
+              tools:ignore="TextSizeCheck" />
+
+          <TextView
+              android:id="@+id/hotelOwner_profile_ur_email"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="start"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp"
+              android:text="baraabualrub109@gmail.com"
+              android:textSize="7pt"
+              android:textStyle="bold"
+              tools:ignore="HardcodedText,TextSizeCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_user_info"
+            android:padding="10dp">
+
+          <TextView
+              android:id="@+id/textView8"
+              style="@style/TextAppearance.AppCompat.Body2"
+              android:layout_width="90dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="start"
+              android:padding="10dp"
+              android:text="@string/urPhone"
+              android:textSize="7pt"
+              android:textStyle="bold"
+              tools:ignore="TextSizeCheck" />
+
+          <TextView
+              android:id="@+id/hotelOwner_profile_ur_phone"
+              android:layout_width="200dp"
+              android:layout_height="40dp"
+              android:layout_weight="1"
+              android:gravity="start"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp"
+              android:text="+972566040930"
+              android:textSize="7pt"
+              android:textStyle="bold"
+              tools:ignore="HardcodedText,TextSizeCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_user_info"
+            android:padding="10dp">
+
+          <TextView
+              android:id="@+id/textView7"
+              style="@style/TextAppearance.AppCompat.Body2"
+              android:layout_width="90dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="start"
+              android:padding="10dp"
+              android:text="@string/urPass"
+              android:textSize="7pt"
+              android:textStyle="bold"
+              tools:ignore="TextSizeCheck" />
+
+          <TextView
+              android:id="@+id/hotelOwner_profile_pass_text"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+
+              android:layout_weight="1"
+              android:gravity="start"
+              android:padding="10dp"
+              android:text="baraa1228"
+              android:textSize="7pt"
+
+              android:textStyle="bold"
+              android:visibility="gone"
+              tools:ignore="HardcodedText,TextSizeCheck" />
+
+          <ImageView
+              android:id="@+id/hotelOwner_profile_pass_eye"
+              android:layout_width="180dp"
+              android:layout_height="40dp"
+
+              android:layout_gravity="start"
+
+              android:layout_weight="1"
+              android:importantForAccessibility="no"
+              android:padding="10dp"
+              android:src="@drawable/ic_eye"
+              android:visibility="visible" />
+
+        </TableRow>
+      </TableLayout>
+
+      <Button
+          android:id="@+id/hotelOwner_edit_ur_info"
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+
+          android:layout_gravity="center"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"
+          android:backgroundTint="@color/mainColorOrange"
+          android:text="@string/edit_ur_inf"
+          android:textSize="15dp"
+          android:textStyle="bold"
+          tools:ignore="SpUsage,TextSizeCheck" />
+
+      <Button
+          android:id="@+id/hotelOwner_yourHotels"
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="30dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginBottom="0dp"
+          android:layout_gravity="center"
+          android:text="@string/yourHotels"
+          android:textSize="18dp"
+          android:textStyle="bold"
+          android:visibility="gone"
+          tools:ignore="SpUsage,TextSizeCheck,VisualLintButtonSize" />
+
+      <TextView
+          android:id="@+id/hotelOwner_noHY"
+          style="@style/TextAppearance.AppCompat.Body2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="30dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginBottom="0dp"
+          android:background="@drawable/bg_user_info"
+          android:gravity="center"
+          android:padding="8dp"
+          android:text="@string/noHotelsYet"
+          android:textSize="9pt"
+          android:textStyle="bold"
+          android:visibility="visible"
+          tools:ignore="TextSizeCheck" />
+
+      <Button
+          android:id="@+id/hotelOwner_createNewHotel"
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:layout_gravity="center"
+          android:text="@string/createNewHotel"
+          android:textSize="18dp"
+          android:textStyle="bold"
+          tools:ignore="SpUsage,TextSizeCheck,VisualLintButtonSize" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_marginTop="50dp"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:background="@drawable/bg_linear"
+          android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hotelOwner_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:backgroundTint="@color/mainColorOrange"
+            android:text="@string/logout"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="SpUsage,TextSizeCheck" />
+
+        <Button
+            android:id="@+id/hotelOwner_del_ur_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:backgroundTint="@color/mainColorOrange"
+            android:text="@string/del_ur_acc"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="SpUsage,TextSizeCheck" />
+      </LinearLayout>
+
+      <ImageView
+          android:id="@+id/hotelOwner_aboutUs"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_gravity="end"
+          android:layout_marginTop="15dp"
+          android:layout_marginStart="25dp"
+          android:layout_marginEnd="25dp"
+          android:layout_marginBottom="25dp"
+          android:background="@color/mainColorOrange"
+          android:src="@drawable/ic_question"
+          android:textSize="15dp"
+          tools:ignore="ContentDescription,SpUsage,TextSizeCheck" />
+
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

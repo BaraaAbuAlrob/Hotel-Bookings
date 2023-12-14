@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HotelRooms"
+
+    android:background="@drawable/bg_room_update" >
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginLeft="-5dp"
+
+        android:background="@drawable/bg_card"
+        tools:ignore="VisualLintBounds">
+
+        <TextView
+            android:id="@+id/heading_hotelNameOwner"
+            style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="30dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+
+            android:text="@string/hotelName"
+            android:textColor="@color/mainColorBlack"
+
+            android:textSize="12pt"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_noRoomsYetOwner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:text="@string/noDataYet"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:gravity="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRoomsOwner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_below="@+id/heading"
+        android:clickable="true"
+        tools:listitem="@layout/room_recyclerview_item"
+        android:contextClickable="true"
+        android:layout_gravity="center" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/createRoomOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:elevation="0dp"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+</RelativeLayout>

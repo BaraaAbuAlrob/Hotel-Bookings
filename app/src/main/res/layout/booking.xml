@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Booking"
+
+    android:background="@drawable/bg_room_update"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginLeft="-5dp"
+
+        android:background="@drawable/bg_card" >
+
+        <TextView
+            android:id="@+id/heading_hotelName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="@string/booking"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="30dp"
+
+            android:textSize="12pt"
+            android:textColor="@color/mainColorBlack"
+
+            style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/booking_roomImg"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+
+                android:src="@drawable/notfound"
+                android:layout_margin="10dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="30dp"
+
+                android:layout_gravity="start"
+                android:orientation="horizontal"
+                android:gravity="center" >
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp"
+                    android:text="@string/daysNum"
+                    android:textSize="8pt"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/booking_NumOfDays"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp"
+                    android:text="3"
+                    android:textSize="8pt"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textViewdvvc"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/days"
+                    android:textSize="8pt"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="-20dp"
+
+
+                android:layout_gravity="start"
+                android:orientation="horizontal"
+                android:gravity="center" >
+
+
+                <TextView
+                    android:id="@+id/textViewvfvc"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp"
+                    android:text="@string/the_price"
+                    android:textSize="8pt"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/booking_roomPrice"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="99$"
+                    android:textSize="8pt"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/booking_description"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="5dp"
+
+                android:padding="10dp"
+
+                android:text="@string/booking_description"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <Button
+                android:id="@+id/bookTheRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/Book_the_room_now"
+                android:textStyle="bold"
+                android:textSize="8pt"
+
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                style="@style/Widget.Material3.Button"
+                android:backgroundTint="@color/mainColorOrange" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

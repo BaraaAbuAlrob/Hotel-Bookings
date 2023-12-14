@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+
+    android:padding="5dp"
+    android:background="@drawable/bg_dialog" >
+
+    <TextView
+        android:id="@+id/text_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="start"
+        android:text="@string/choseOne"
+        android:textColor="@color/black"
+        android:textSize="11pt"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck,UseCompatTextViewDrawableXml,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btn_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_heading"
+        android:gravity="center"
+        android:paddingStart="50dp"
+        android:text="@string/takePhoto"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry,TextSizeCheck" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/text_heading"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_camera"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/btn_load_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/btn_take_photo"
+        android:gravity="center"
+        android:paddingStart="50dp"
+        android:text="@string/loadPhoto"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry,TextSizeCheck" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/text_heading"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_profile_img"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+</RelativeLayout>

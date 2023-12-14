@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/roomImg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:src="@drawable/notfound"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="90dp"
+
+        android:layout_gravity="start"
+        android:orientation="horizontal"
+        android:gravity="start|center" >
+
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:text="@string/remaining"
+            android:textSize="6pt"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/roomNumDays"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="3"
+            android:textSize="6pt"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textViewdvvc"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:text="@string/days"
+            android:textSize="6pt"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="20dp"
+
+        android:layout_gravity="start"
+        android:orientation="horizontal"
+        android:gravity="start|center" >
+
+
+        <TextView
+            android:id="@+id/textViewvfvc"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:text="@string/the_price"
+            android:textSize="6pt"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/roomPrice"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="6pt"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="393dp"
+        android:layout_height="2dp"
+        android:background="@color/stroke" />
+
+</LinearLayout>

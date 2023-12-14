@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/bg_dialog" >
+
+    <GridView
+        android:id="@+id/hotelOwner_gridview_hotels"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+
+        android:clickable="true"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:numColumns="2"
+        android:padding="10dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="7dp"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/c_d_y_h_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NestedScrolling,RtlHardcoded,UselessLeaf"
+        tools:listitem="@layout/gridview_item_your_hotels" />
+
+    <Button
+        android:id="@+id/c_d_y_h_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/back"
+        android:textSize="9pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotelOwner_gridview_hotels" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="Orientation">
+
+    <ImageView
+        android:id="@+id/BR_RVI_RoomImage"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ic_profile_img"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name"
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:gravity="start"
+            style="@style/TextAppearance.AppCompat.Body2"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/booked_rooms_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Baraa Ahmad AbuAlrob"
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:gravity="start"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:gravity="start"
+            style="@style/TextAppearance.AppCompat.Body2"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/booked_rooms_bookingDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2023.11.17m, 8:25:45 am"
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:gravity="start"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daysNum"
+                android:textColor="@color/black"
+                android:textSize="7pt"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textStyle="bold"
+                android:gravity="start"
+                style="@style/TextAppearance.AppCompat.Body2"
+                tools:ignore="RtlSymmetry,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/booked_rooms_numDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:textSize="7pt"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textStyle="bold"
+                android:gravity="start"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,TextSizeCheck" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/booked_rooms_userInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userInfo"
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+
+        android:background="@color/black"
+        android:layout_marginLeft="-415dp"
+        android:layout_marginTop="220dp"
+        tools:ignore="RtlHardcoded,VisualLintBounds" />
+</LinearLayout>

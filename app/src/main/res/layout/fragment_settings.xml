@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/bg_room_update"
+    android:orientation="vertical"
+    android:gravity="start" >
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginStart="-5dp"
+
+        android:background="@drawable/bg_card" >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="@string/settings"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="30dp"
+
+            android:textSize="12pt"
+            android:textColor="@color/mainColorBlack"
+
+            style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/color_bg_dialog"
+        android:clickable="true"
+        android:elevation="50dp"
+        app:cardCornerRadius="30dp" >
+
+            <ImageView
+                android:id="@+id/fragment_userPhoto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:layout_marginLeft="5dp"
+                android:padding="20dp"
+                android:layout_gravity="center|start"
+                android:paddingTop="20dp"
+
+                android:background="@drawable/bg_profile_img"
+                android:src="@drawable/alqassam" />
+
+        <TextView
+            android:id="@+id/sett_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="10dp"
+
+            android:text="Baraa Ahmad AbuAlrob"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sett_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="10dp"
+
+            android:text="baraabualrob109@gmail.com"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/fragment_myBookings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="90dp"
+            android:layout_gravity="center|bottom"
+
+            android:backgroundTint="@color/mainColorOrange"
+            android:text="@string/myBookings"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        android:padding="15dp"
+        android:backgroundTint="@color/color_bg_dialog"
+        android:clickable="true"
+        android:elevation="50dp"
+        app:cardCornerRadius="30dp" >
+
+        <Button
+            android:id="@+id/sett_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+
+            android:text="@string/about_Us"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center|start"
+            android:layout_gravity="center|top"
+
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:drawableEnd="@drawable/ic_contact_us" />
+
+        <Button
+            android:id="@+id/sett_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+
+            android:text="@string/logout"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center|start"
+            android:layout_gravity="center|top"
+
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:drawableEnd="@drawable/ic_logout" />
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

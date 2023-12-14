@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/hotel_item_img"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/notfound"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/hotel_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Hotel name"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="10pt"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/hotel_item_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotel location"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="8pt" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/stroke" />
+</LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+
+    android:background="@drawable/sign_up_in_bg"
+    android:orientation="vertical"
+    tools:context=".activities.SignUp">
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="-5dp"
+
+        android:background="@drawable/bg_card"
+        tools:ignore="VisualLintBounds">
+
+        <TextView
+
+            style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="30dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+
+            android:text="@string/signUp"
+            android:textColor="@color/mainColorBlack"
+
+            android:textSize="12pt"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+
+    <!--    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"-->
+
+    <!--    app:boxStrokeColor="@color/primaryColor"-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+            <ImageView
+                android:id="@+id/signUp_user_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_profile_img"
+
+                android:padding="25dp"
+                android:src="@drawable/ic_add_photo"
+                tools:ignore="ContentDescription" />
+
+            <Button
+                android:id="@+id/signUp_chose_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:text="@string/choseFile"
+                android:textSize="16dp"
+                tools:ignore="SpUsage,TextSizeCheck" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/usernameInputLayout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="10dp"
+                app:boxStrokeWidth="2dp"
+
+                app:counterEnabled="true"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_person">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/user_name"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:inputType="text"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailInputLayout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="10dp"
+                app:boxStrokeWidth="2dp"
+
+                app:counterEnabled="true"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:hint="@string/email"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:inputType="textEmailAddress"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneInputLayout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="10dp"
+                app:boxStrokeWidth="2dp"
+
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                app:startIconDrawable="@drawable/ic_phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/phone"
+                    android:inputType="phone"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:maxLength="10"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordInputLayout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="10dp"
+                app:boxStrokeWidth="2dp"
+                app:counterEnabled="true"
+
+                app:counterMaxLength="8"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/ic_lock">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/password"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:inputType="textPassword"
+                    android:maxLength="9"
+                    android:textSize="16dp"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/signUp_user_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="20dp"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:isScrollContainer="true"
+                android:entries="@array/userTypes" />
+
+            <Button
+                android:id="@+id/signupBtn"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp"
+
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/mainColorOrange"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/signUp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="7pt"
+                tools:ignore="TextSizeCheck"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="342dp" />
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

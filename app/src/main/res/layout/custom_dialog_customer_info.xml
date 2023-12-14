@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+
+    android:orientation="vertical"
+    android:gravity="start"
+    android:padding="10dp"
+    android:background="@drawable/bg_dialog">
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/TextAppearance.AppCompat.Body2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="@string/customerInfo"
+        android:textColor="@color/mainColorOrange"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        tools:ignore="TextSizeCheck,UseCompatTextViewDrawableXml,TextContrastCheck"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+
+        android:id="@+id/CI_name"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Name"
+        android:textColor="@color/black"
+
+        android:textSize="7pt"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,TextSizeCheck"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+    <TextView
+
+        android:id="@+id/CI_email"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="7pt"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,TextSizeCheck"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/CI_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Phone"
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextSizeCheck"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="190dp" />
+
+        <ImageButton
+            android:id="@+id/CI_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_bg_dialog"
+            android:src="@android:drawable/sym_call_outgoing"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/CI_close"
+        style="@style/Widget.Material3.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/mainColorOrange"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="7pt"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        tools:ignore="TextSizeCheck"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+</LinearLayout>

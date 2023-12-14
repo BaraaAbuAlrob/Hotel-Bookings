@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">حجوزات الفنادق</string>
+
+    <string name="has_not_an_account">لا تملك حساب؟</string>
+    <string name="create_new_one">إنشاء واحد جديدة!</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Book_the_room_now">إحجز الغرفة الأن!</string>
+    <string name="the_price">السعر لليلة الواحدة: </string>
+    <string name="days"> أيام</string>
+    <string name="daysNum">عدد الأيام: </string>
+    <string name="hotelName">إسم الفندق</string>
+    <string name="hotels">الفنادق</string>
+    <string name="signIn">تسجيل الدخول</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="password">كلمة المرور</string>
+    <string name="signUp">إنشاء حساب</string>
+    <string name="clearAll">مسح الكل</string>
+    <string name="user_name">إسم المستخدم:</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="booking">حجز</string>
+    <string name="myBookings">حجوزاتي</string>
+    <string name="remaining">المتبقي: </string>
+    <string name="cancelBooking">إلغاء الحجز</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="mainPages">الصفحات الرئيسية</string>
+    <string name="profile_help_text">يمكنك حذف حسابك\nوتعديل معلوماتك هنا!</string>
+    <string name="edit_ur_inf">تعديل معلوماتك!</string>
+    <string name="del_ur_acc">حذف الحساب!</string>
+    <string name="palestine_news">أخبار فلسطين!</string>
+    <string name="urName">"إسمك: "</string>
+    <string name="urEmail">"بريدك الإلكتروني: "</string>
+    <string name="urPhone">"رقمك الهاتفي: "</string>
+    <string name="urPass">"كلمة مرورك: "</string>
+    <string name="settings">الإعدادات</string>
+    <string name="home">الرئيسية</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="about_Us">معلومات التواصل</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="areYouSure">هل أنت متأكد؟</string>
+    <string name="note">انتبه!</string>
+    <string name="cancel">إلغاء</string>
+    <string name="back">إغلاق</string>
+    <string name="about_Us_message">اسمي براء أبو الرب، أنا مبرمج ومهندس، أعمل وأعيش في فلسطين.\n\nرقم هاتفي هو 0566040930\nعنوان بريدي الإلكتروني هو baraabualrub109@gmail.com\nاسمي في LinkedIn هو براء أبو الرب\n\ يمكنك العثور على مشاريعي عبر هذا الرابط:\nhttps://www.linkedin.com/in/baraa-abualrob-58230921b</string>
+    <string name="booking_description">تتسع لأربعة أشخاص بسرير مزدوج وسريرين مفردين.\n\nمطلة على البحر الأبيض المتوسط.\n\nوتستقبل خدمات متواصلة طوال اليوم وليلة إضافية.\n\nإنترنت فايبر لا ينقطع.\n\nهواء مميز تكييف.\n\nجميع أدوات المطبخ الأساسية بأحدث الأساليب.\n\nاقفل الباب باستخدام بصمة إصبعك الشخصية. بصمة الإصبع يمكن أن تحمل 10 أصابع.</string>
+    <string name="news_text">وأعلن القائد العام لكتائب القسام محمد الضيف في كلمته، “بدء عملية فيضان الأقصى”، مشيراً إلى أننا “قررنا وضع حد للانتهاكات الإسرائيلية”. \n\n\nوأكد الضيف أن \"الضربة الأولى لعملية طوفان الأقصى تجاوزت 5000 صاروخ استهدفت مواقع العدو ومطاراته وتحصيناته العسكرية\"، لافتا إلى أنه \"ابتداء من اليوم، وسينتهي التنسيق الأمني مع الاحتلال.\n\nورأى الضيف أن \"شعبنا اليوم يستعيد ثورته ويعود إلى مشروع إقامة الدولة، وفيضان الأقصى أكبر مما يعتقده ويؤمن به الاحتلال\"، مؤكدا أنه "حان الوقت لتتوحد كافة القوى العربية والإسلامية لدحر الاحتلال".</string>
+    <string name="imgCode">رمز الصورة...</string>
+    <string name="youWillLossYourAcc">سوف تخسر كل بياناتك الشخصية وحسابك!</string>
+    <string name="delete">حذف</string>
+    <string name="update">تحديث</string>
+    <string name="noDataFound">لا يوجد بيانات!</string>
+    <string name="checkingYourInternetConnection">جارٍ التحقق من اتصالك بالإنترنت...</string>
+    <string name="TBDS">تمت عملية الحجز بنجاح 🫡</string>
+    <string name="BDS">تم الحجز بنجاح 🫡</string>
+    <string name="bookingRoom">حجز الغرقة</string>
+    <string name="sorrySTGWrong">عذراً, حدث خطأ ما 😢</string>
+    <string name="BookingFailed">فشل الحجز 😢</string>
+    <string name="noNotifications">لا يوجد إشعارات.</string>
+    <string name="SSTGWPTA">عذراً حدث خطأ ما! يرجى المحاولة مرة أخرى.</string>
+    <string name="deleteTheNotification">هل تريد حذف الإشعار؟</string>
+    <string name="cancelBookingRoom">إلغاء حجز الغرفة؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="noDataYet">لا توجد بيانات حتى الآن</string>
+    <string name="choseFile">إختيار ملف</string>
+    <string name="tenant">مستأجر</string>
+    <string name="createNewHotel">إنشاء فندق جديد</string>
+    <string name="hotelOwner">صاحب الفندق</string>
+    <string name="chose">إختر</string>
+    <string name="takePhoto">أخذ صورة</string>
+    <string name="loadPhoto">تحميل صورة</string>
+    <string name="userType">"نوع المستخدم: "</string>
+    <string name="location">الموقع</string>
+    <string name="noHotelsYet">لا يوجد فنادق حتى الأن</string>
+    <string name="create">إنشاء</string>
+    <string name="yourHotels">الفنادق الخاصة بك</string>
+    <string name="updateRoomInfo">تحديث بيانات الغرفة؟</string>
+    <string name="deleteRoom">حذف الغرفة؟</string>
+    <string name="description">الوصف:</string>
+    <string name="deleteTheHotel">حذف الفندق!</string>
+    <string name="deleteTheRoom">حذف الغرفة!</string>
+    <string name="choseOne">إختر واحد</string>
+    <string name="theBookedRooms">الغرف المحجوزة</string>
+    <string name="date">التاريخ:</string>
+    <string name="userInfo">معلومات المستخدم</string>
+    <string name="customerInfo">معلومات الزبون</string>
+    <string name="call">إتصال</string>
+    <string name="ifCDSCH">إذا لم تبدأ المكالمة بعد، إضغط هنا.</string>
+
+    <string-array name="userTypes">
+        <item>مستأجر</item>
+        <item>مالك فندق</item>
+    </string-array>
+</resources>

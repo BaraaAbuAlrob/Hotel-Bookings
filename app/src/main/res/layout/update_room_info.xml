@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+
+    android:background="@drawable/bg_room_update"
+    android:orientation="vertical"
+    tools:context=".activities.UpdateRoomInfo">
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="-5dp"
+
+        android:background="@drawable/bg_card"
+        tools:ignore="VisualLintBounds">
+
+        <TextView
+
+            style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="30dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+
+            android:text="@string/update"
+            android:textColor="@color/mainColorBlack"
+
+            android:textSize="12pt"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+
+    <!--    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"-->
+
+    <!--    app:boxStrokeColor="@color/primaryColor"-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+            <ImageView
+                android:id="@+id/updateRoomInfo_room_img"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+
+                android:layout_margin="5dp"
+                android:padding="25dp"
+                android:src="@drawable/ic_profile_img"
+                tools:ignore="ContentDescription" />
+
+            <Button
+                android:id="@+id/roomUpdate_chose_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:text="@string/choseFile"
+                android:textSize="16dp"
+                tools:ignore="SpUsage,TextSizeCheck" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/updateRoomInfo_numDaysInputLayout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="10dp"
+                app:boxStrokeWidth="2dp"
+
+                app:counterEnabled="true"
+                app:counterMaxLength="2"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_numbers">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/daysNum"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/updateRoomInfo_roomPriceFNightInputLayout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="10dp"
+                app:boxStrokeWidth="2dp"
+
+                app:counterEnabled="true"
+                app:counterMaxLength="3"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_money">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:hint="@string/the_price"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/updateRoomInfo_descriptionInputLayout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="10dp"
+                app:boxStrokeWidth="2dp"
+
+                app:counterEnabled="true"
+                app:counterMaxLength="500"
+                app:startIconDrawable="@drawable/ic_description">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/description"
+                    android:inputType="text"
+                    android:maxLength="501"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/updateRoomInfo_updateBtn"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/mainColorOrange"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="7pt"
+                tools:ignore="TextSizeCheck,DuplicateSpeakableTextCheck"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="342dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
