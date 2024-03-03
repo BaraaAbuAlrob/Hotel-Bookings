@@ -21,7 +21,7 @@ import retrofit2.http.POST;
 
 public interface ApiServices {
 
-    /**
+    /*
      عندما يتم إستدعاء الدالة يقوم ال ResetApiConnection بإحضار ال BaseUrl وإضافة إسم ال php file(API) عليه من قيمة ال POST/GET/DELETE/PUT...etc
      */
 
@@ -42,7 +42,7 @@ public interface ApiServices {
             @Field("phone") String phone,
             @Field("password") String password );// Abstract method
 
-    /**
+    /*
      ال Fields يلي حددناهم ("email", "password") لاااازم يتطابقوا مع القيم يلي إحنا محددينها
      بداخل ال Post array بداخل ملف ال API يلي من خلالها بنم إستقبال البيانات بداخل ال API ومعالجتها
      */

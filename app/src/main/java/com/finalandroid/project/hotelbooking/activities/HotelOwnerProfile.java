@@ -385,7 +385,6 @@ public class HotelOwnerProfile extends AppCompatActivity implements View.OnClick
         call.enqueue(new Callback<UserResult>() {
             @Override
             public void onResponse(@NonNull Call<UserResult> call, @NonNull Response<UserResult> response) {
-
                 assert response.body() != null;
                 if(!response.body().getError()) {
                     User u = response.body().getUser();
@@ -394,18 +393,14 @@ public class HotelOwnerProfile extends AppCompatActivity implements View.OnClick
                     SharedPrefManager.getInstance(HotelOwnerProfile.this).userUpdate(u);
                     recreate();
                 }
-
                 Log.e("onResponse: ", response.body().getMessage());
                 Toast.makeText(HotelOwnerProfile.this, response.body().getMessage(), Toast.LENGTH_LONG).show();
             }
-
             @Override
             public void onFailure(@NonNull Call<UserResult> call, @NonNull Throwable t) {
-
                 Log.e("onFailure: ", Objects.requireNonNull(t.getMessage()));
                 Toast.makeText(HotelOwnerProfile.this, t.getMessage(), Toast.LENGTH_LONG).show();
             }
-
         });
     } // End of updateUser() method.
 

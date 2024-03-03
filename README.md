@@ -1,4 +1,4 @@
-# Hoteal Bookings
+# Hotel Bookings
 A system through which you can create a hotel tenant account or a hotel owner account. If you are a tenant, you can view all the available hotels and all the rooms and their information. You can book more than one room if you want, and you will receive a notification about that. You can view all the rooms you have booked and cancel the reservation at any time. As for the hotel owner’s account, he can create his hotels with the available rooms and add the data he wants for the hotel and each room. He can also add rooms at any time he wants, and he can know the reserved rooms and the reservation information and contact him. In addition to the possibility of creating a profile page for both accounts.
 
 # Preview

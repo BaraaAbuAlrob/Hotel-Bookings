@@ -20,7 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RestApiConnection {
 
-    public  static String PHOTO_BASE_URL = "http://192.168.1.111/HotelBooking/";
+    public  static String PHOTO_BASE_URL = "http://192.168.1.115/HotelBooking/";
 
     private static RestApiConnection instance;
     private final ApiServices myApiServices;
@@ -30,7 +30,7 @@ public class RestApiConnection {
               .setLenient().create();
 
         //    The General Url OR The Base Url code for all links.
-        String BASE_URL = "https://192.168.1.111/HotelBooking/";
+        String BASE_URL = "https://192.168.1.115/HotelBooking/";
 
         Retrofit retrofit = new Retrofit.Builder().baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create(gson))
